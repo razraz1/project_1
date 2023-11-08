@@ -1,0 +1,140 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.pexels.com/photos/1684004/pexels-photo-1684004.jpeg?auto=compress&cs=tinysrgb&w=400);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.head{
+    background: lightblue;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    margin-bottom: 1%;
+    z-index: 1;
+}
+
+.head button{
+    height: 30px;
+}
+
+.serch{
+    flex: 0 0 65%;
+    height: 30px;
+}  
+
+.head a{
+    text-decoration: none;
+    padding: 1%;
+    background: wheat;
+    border-radius: 20%;
+}
+
+.head a:hover {
+    background: green;
+    color: aliceblue;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(10, 8.9%);
+    grid-gap: 10px;
+}
+
+
+.item{
+    background:linear-gradient(rgb(121, 218, 121),rgb(157, 157, 88));    
+    padding: 5%;
+    text-align: center;
+    position: relative;
+    grid-column: span 4; 
+}
+
+.item img{
+    width: 80%;
+    border-radius: 5%;
+}
+
+.imgRow{
+    margin-top: 5%;
+    display: flex;
+}
+
+/* .imgRow picture{
+    max-width: 100%;
+    margin: 5px;
+    
+} */
+
+/* .item a{
+    display: block;
+} */
+ 
+
+/* 
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+} */
+
+video{
+    width:105%;
+    border-radius: 5%;
+}
+
+.formContainer{
+    background: wheat;
+    grid-column: span 4/11;
+
+}
+
+.moreItem{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background: yellowgreen;
+    grid-column: span 10;
+}
+
+.moreItem img{
+    max-width: 15%;
+    min-height: 75%;
+    margin-bottom: 10px;
+    border: 2px solid;
+}
+
+footer{
+    background: red;
+    padding: 2%;
+    margin-top: 1%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 750px) {
+    .head h1 {
+        flex: 0 0 10%;
+    }
+
+    .head input{
+        flex: 0 0 40%;    
+    }
+
+    .head button{
+        flex: 0 0 0.1%;
+        padding: 5px;
+    }
+    
+
+    
+}
